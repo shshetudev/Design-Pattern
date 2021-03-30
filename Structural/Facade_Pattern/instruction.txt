@@ -1,6 +1,20 @@
-Todo:
+Implementation:
 =====
 1. Shape is an interface and Circle, Rectangle and Square will implement it.
 Shape interface has a method named: draw(): void and each of the inherited class has their own implementations.
 2. Create a class named Shapemaker. Inside this class create an object of each of the inherited classes and create 3 different methods calling the specified classes : draw() method.
 3. Create a FacadePatternDemo class and create an object inside that and call all the different methods.
+
+Example: 
+========
+1. Compiler works.
+2. Beautiful Home.
+
+Pros:
+====
+1. Gives a nice inteface. Hides implementation.
+
+Cons:
+=====
+1. Oversimplification, Leaky abstruction.
+2. Over verticalization, creates a facade which is so specific, a single change in use case will change the whole implementation.
