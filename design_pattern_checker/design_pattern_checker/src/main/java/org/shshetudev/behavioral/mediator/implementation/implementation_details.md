@@ -1,0 +1,23 @@
+## Implementation details
+- The `MachineMediator` is an interface which acts as  a generic mediator. This interface contains operations call by one object to another.
+- Teh `Colleague` interface has one method to set the mediator for the concrete colleague's class.
+- The `Button` class is a colleague class which holds a reference to a mediator.
+  - The user press the button which class the `press()` method of this class which in turn, calls the `start()` method of concrete mediator class.
+  - This `start()` method of the mediator class calls the `start()` method of the machine class on behalf of the `Button` class.
+- The `Machine` class which holds a reference to the mediator has the `start()` method which is called on teh press of the button by the mediator class.
+  - The method has an `open()` method of the mediator which in turn calls the `open()` method of the `Valve` class in order to open the valve of the machine.
+- The `Valve` class has two methods, and `open()` method which is called to open the  valve and when the water is filled it called the `closed()` method.
+  - But please note that it is not calling the `closed()` method directly, it calls the `closed()` method of the mediator which invokes the method of this class.
+- On closing the valve it turns the heater on but again by invoking the mediator's method instead of directly calling the heater's method.
+- The heater's `on()` method switch on the heater and set the temperature as required. It also checks if temperature is reached as required, it turns `off()` the method.
+  - The checking of the temperature and switching off the heater is done through the mediator.
+  - After switching off, it calls the `wash()` method of the `Machine` class through the mediator to start washing.
+- As stated by the company, the washing machine has a set of wash programs and the software should support all these programs.
+  - The `CottonMediator` is actually one of the washing programs for the machine.
+  - It is set as a washing program for cottons, so parameters such as temperature, drum spinning speed, level of soil removal etc., are set accordingly.
+  - The `CottonMediator` class implements the `MachineMediator` interface and provides the required methods. These methods are the operations that are performed by the colleague objects in order to get the work done.
+  - The above mediator class just calls the method of colleague object on behalf of another colleague object in order to achieve this.
+- There are also some supporting classes like `Sensor`. This class is used by `Heater` to check the temperature.
+  - `SoilRemoval` class is used by `Machine` class.
+- In order to feel the advantages and power of the Mediator pattern, we can take another mediator that is used as a washing program for denims.
+  - We can clearly see the differences between two mediator classes. There is different temperature, spinning speed is also different.
