@@ -1,6 +1,6 @@
-package org.shshetudev.behavioral.mediator.implementation;
+package org.shshetudev.behavioral.mediator.implementation.mediator;
 
-interface MachineMediator {
+public interface MachineMediator {
     void start();
 
     void wash();

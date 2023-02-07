@@ -1,4 +1,7 @@
-package org.shshetudev.behavioral.mediator.implementation;
+package org.shshetudev.behavioral.mediator.implementation.colleague;
+
+
+import org.shshetudev.behavioral.mediator.implementation.mediator.MachineMediator;
 
 public class Heater implements Colleague {
     private MachineMediator mediator;

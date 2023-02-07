@@ -1,4 +1,4 @@
-package org.shshetudev.behavioral.mediator.implementation;
+package org.shshetudev.behavioral.mediator.implementation.others;
 
 public class Sensor {
     public boolean checkTemperature(int temp) {

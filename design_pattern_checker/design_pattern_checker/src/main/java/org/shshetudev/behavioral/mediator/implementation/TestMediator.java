@@ -1,5 +1,16 @@
 package org.shshetudev.behavioral.mediator.implementation;
 
+import org.shshetudev.behavioral.mediator.implementation.colleague.Button;
+import org.shshetudev.behavioral.mediator.implementation.colleague.Heater;
+import org.shshetudev.behavioral.mediator.implementation.colleague.Machine;
+import org.shshetudev.behavioral.mediator.implementation.colleague.Valve;
+import org.shshetudev.behavioral.mediator.implementation.mediator.CottonMediator;
+import org.shshetudev.behavioral.mediator.implementation.mediator.DenimMediator;
+import org.shshetudev.behavioral.mediator.implementation.mediator.MachineMediator;
+import org.shshetudev.behavioral.mediator.implementation.others.Motor;
+import org.shshetudev.behavioral.mediator.implementation.others.Sensor;
+import org.shshetudev.behavioral.mediator.implementation.others.SoilRemoval;
+
 public class TestMediator {
     public static void main(String[] args) {
         MachineMediator mediator = null;

@@ -1,4 +1,4 @@
-package org.shshetudev.behavioral.mediator.implementation;
+package org.shshetudev.behavioral.mediator.implementation.others;
 
 public class Motor {
     public void startMotor() {

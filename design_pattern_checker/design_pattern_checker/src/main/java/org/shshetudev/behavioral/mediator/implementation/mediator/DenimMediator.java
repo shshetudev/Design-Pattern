@@ -1,4 +1,11 @@
-package org.shshetudev.behavioral.mediator.implementation;
+package org.shshetudev.behavioral.mediator.implementation.mediator;
+
+import org.shshetudev.behavioral.mediator.implementation.colleague.Heater;
+import org.shshetudev.behavioral.mediator.implementation.colleague.Machine;
+import org.shshetudev.behavioral.mediator.implementation.colleague.Valve;
+import org.shshetudev.behavioral.mediator.implementation.others.Motor;
+import org.shshetudev.behavioral.mediator.implementation.others.Sensor;
+import org.shshetudev.behavioral.mediator.implementation.others.SoilRemoval;
 
 public class DenimMediator implements MachineMediator {
 
