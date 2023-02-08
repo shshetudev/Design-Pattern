@@ -85,7 +85,7 @@
 | Abstract Factory | Adapter    | Chain of Responsibility |
 | Builder          | Bridge     | Command                 |
 | Factory Method   | Composite  | Interpreter             |
-|                  | Decorator  | Mediator                |
+| Singleton        | Decorator  | Mediator                |
 |                  | Facade     | Memento                 |
 |                  | Flyweight  | Observer                |
 |                  | Proxy      | State                   |
